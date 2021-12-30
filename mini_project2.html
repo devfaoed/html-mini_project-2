@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Table</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        table,th,td{
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 1.4rem;
+            padding: 10px;
+            text-align: left;
+            line-height: 1.3;
+        }
+        table{
+            width: 800px;
+        }
+        .tray{
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <table>
+                <tr class="tray">
+                    <th colspan="3"><b>Invoice #12345ABC</b></th>
+                    <th>18 Jul 2019</th>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <p><b>Pay To:</b><br />
+                            The Tech Park<br />
+                            123 willow Street<br />
+                            Kaduna, LA - 524344
+                        </p>
+                    <td colspan="4">                         
+                        <p><b>Customer:</b><br />
+                            Addokun Faith <br />
+                            Adui Area<br />
+                            Oyo, LA - 5243874
+                        </p>
+                    </td>
+                    </td>
+                </tr>
+
+                <tr class="tray">
+                    <th>Name/Description</th>
+                    <th>Qty</th>
+                    <th>MRP</th>
+                    <th>Amount</th>
+                </tr>
+
+                <tr>
+                    <td>Pizza</td>
+                    <td>3</td>
+                    <td>400</td>
+                    <td>1200</td>
+                </tr>
+
+                <tr>
+                    <td>Burger</td>
+                    <td>3</td>
+                    <td>200</td>
+                    <td>600</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="tray"><b>Sub Total</b></td>
+                    <td>1800</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="tray"><b>TAX</b></td>
+                    <td>10%</td>
+                    <td>1800</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="tray"><b>Grand Total</b></td>
+                    <td>Rs 1620</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html
